@@ -10,13 +10,18 @@ android:background="@color/teal_200"
 
     >
 
-
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="176dp"
+        android:layout_marginTop="7mm"
+        app:srcCompat="@drawable/tac" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="27mm"
+        android:layout_marginTop="5mm"
         android:textSize="30sp"
         android:text="Add a players name"
         />
@@ -83,12 +88,13 @@ android:background="@color/teal_200"
         android:layout_width="98dp"
         android:layout_height="54dp"
         android:layout_marginLeft="150dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/custom_button"
         android:text="Rules"
-        app:backgroundTint="@color/purple_700"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="96dp" />
+
+        app:backgroundTint="@color/purple_700" />
+
+
 
 
 </LinearLayout>
