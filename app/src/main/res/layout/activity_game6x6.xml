@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/teal_200"
     tools:context=".Game3x3">
 
     <RelativeLayout
@@ -40,7 +41,7 @@
             android:layout_marginEnd="17dp"
             android:layout_marginBottom="33dp"
             android:text="reset"
-            app:backgroundTint="#B1AFAF" />
+            app:backgroundTint="@color/purple_700" />
 
         <TextView
             android:id="@+id/timer"
@@ -60,7 +61,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="53dp"
             android:text="Play again"
-            app:backgroundTint="#B1AFAF"/>
+            app:backgroundTint="@color/purple_700"/>
 
         <Button
             android:id="@+id/buttonbtm"
@@ -69,7 +70,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="6dp"
             android:text="Back to menu"
-            app:backgroundTint="#B1AFAF"/>
+            app:backgroundTint="@color/purple_700"/>
     </RelativeLayout>
 
     <LinearLayout

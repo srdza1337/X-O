@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="25mm"
+
+android:background="@color/teal_200"
 
     >
 
@@ -15,6 +16,7 @@
         android:id="@+id/textView"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="27mm"
         android:textSize="30sp"
         android:text="Add a players name"
         />
@@ -67,27 +69,26 @@
 
     <Button
         android:id="@+id/addName"
-        android:layout_width="100dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Start"
-        app:backgroundTint="#B1AFAF"
-        tools:ignore="MissingConstraints"
         android:layout_marginLeft="222dp"
+        android:text="Start"
+        app:backgroundTint="@color/purple_700"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="268dp"
         tools:layout_editor_absoluteY="24dp" />
 
     <Button
-            android:id="@+id/btnrules"
-            android:layout_width="100dp"
-            android:layout_height="54dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginLeft="50dp"
-            android:text="Rules"
-            app:backgroundTint="#B1AFAF"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteY="96dp" />
-
+        android:id="@+id/btnrules"
+        android:layout_width="98dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="120dp"
+        android:text="Rules"
+        app:backgroundTint="@color/purple_700"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="96dp" />
 
 
 </LinearLayout>

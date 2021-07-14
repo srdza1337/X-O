@@ -162,7 +162,7 @@ public class Game_Launcher {
                         }
                         if (player1Turn) {
                             textViewPlayer1.setTextColor(Color.parseColor("gray"));//novo
-                            textViewPlayer2.setTextColor(Color.parseColor("green"));//novo
+                            textViewPlayer2.setTextColor(Color.parseColor("red"));//novo
                             ((Button) v).setText("X");
                             ((Button) v).setBackgroundColor(ac.getResources().getColor(R.color.blue));
 
@@ -170,7 +170,7 @@ public class Game_Launcher {
                             ((Button) v).setText("O");
                             textViewPlayer1.setTextColor(Color.parseColor("blue"));//novo
                             textViewPlayer2.setTextColor(Color.parseColor("gray"));//novo
-                            ((Button) v).setBackgroundColor(ac.getResources().getColor(R.color.green));
+                            ((Button) v).setBackgroundColor(ac.getResources().getColor(R.color.red));
 
 
                         }
@@ -264,7 +264,7 @@ public class Game_Launcher {
 
         }else {
             textViewPlayer1.setTextColor(Color.parseColor("gray"));//novo
-            textViewPlayer2.setTextColor(Color.parseColor("green"));//novo
+            textViewPlayer2.setTextColor(Color.parseColor("red"));//novo
 
         }
         countDownTimer.cancel();//novo
@@ -288,6 +288,7 @@ public class Game_Launcher {
             public void onTick(long millisUntilFinished) {
 
                 timer.setText(millisUntilFinished / 1000 + "");
+
             }
 
             @Override
@@ -300,7 +301,7 @@ public class Game_Launcher {
                 } else {
                     Toast.makeText(ac, pl2 + "'s turn.", Toast.LENGTH_SHORT).show();
                     textViewPlayer1.setTextColor(Color.parseColor("gray"));
-                    textViewPlayer2.setTextColor(Color.parseColor("green"));
+                    textViewPlayer2.setTextColor(Color.parseColor("red"));
                 }
                 countDownTimer.start();
             }
